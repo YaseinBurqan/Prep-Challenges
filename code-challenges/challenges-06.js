@@ -14,11 +14,13 @@
 const findMax = (arr) => {
   let max;
   // write your code here
-
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > max) max = arr[i];
+  for (let i = 0; i < prices.length; i++) {
+    // You can set a debugger and check how each value are changing
+    let element = arr[i];
+    if (element > max) {
+      max = element;
+    }
   }
-  return max;
   return max;
 };
 // -------------------------------------------------------------------------------------------------------
@@ -37,6 +39,10 @@ const findMax = (arr) => {
 const sumNums = (arr) => {
   let sum;
   // write your code here
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+
   return sum;
 };
 // -------------------------------------------------------------------------------------------------------
