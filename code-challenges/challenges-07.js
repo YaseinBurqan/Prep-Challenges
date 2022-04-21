@@ -88,6 +88,18 @@ const objLat = (obj) => {
 
 function cvFormatter(arr) {
   // write your code here
+  const cvFormatter = (arr) => {
+    let infoArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      const e = arr[i];
+      if (e.lastName === null && e.yearsOfExperience > 1) {
+        infoArr.push({ fullName: `${e.firstName}`, tech: `${e.tech}` });
+      } else if (e.yearsOfExperience > 1) {
+        infoArr.push({ fullName: `${e.firstName} ${e.lastName}`, tech: `${e.tech}` });
+      } else continue;
+    }
+    return infoArr;
+  };
 }
 // -------------------------------------------------------------------------------------------------------
 
