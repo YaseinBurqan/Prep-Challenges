@@ -22,7 +22,7 @@
 
 const objLat = (obj) => {
   // write your code here
-  let result = `my name is ${obj.firstName.charAt(0).toUpperCase() + ActiveXObject.firstName.slice(1)} I am ${obj.age} YO, and I love ${obj.hobby}.`;
+  let result = `my name is ${obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1)} ${obj.lastName} I am ${obj.age} YO, and I love ${obj.hobby}.`;
   return result;
 };
 // -------------------------------------------------------------------------------------------------------
@@ -86,21 +86,20 @@ const objLat = (obj) => {
 //  1- Full name is first name + last name
 //  2- If one of the names is null don`t add it to the full name
 
-function cvFormatter(arr) {
-  // write your code here
-  const cvFormatter = (arr) => {
-    let infoArr = [];
-    for (let i = 0; i < arr.length; i++) {
-      const e = arr[i];
-      if (e.lastName === null && e.yearsOfExperience > 1) {
-        infoArr.push({ fullName: `${e.firstName}`, tech: `${e.tech}` });
-      } else if (e.yearsOfExperience > 1) {
-        infoArr.push({ fullName: `${e.firstName} ${e.lastName}`, tech: `${e.tech}` });
-      } else continue;
-    }
-    return infoArr;
-  };
-}
+// write your code here
+const cvFormatter = (arr) => {
+  let infoArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    const e = arr[i];
+    if (e.lastName === null && e.yearsOfExperience > 1) {
+      infoArr.push({ fullName: `${e.firstName}`, tech: `${e.tech}` });
+    } else if (e.yearsOfExperience > 1) {
+      infoArr.push({ fullName: `${e.firstName} ${e.lastName}`, tech: `${e.tech}` });
+    } else continue;
+  }
+  return infoArr;
+};
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
