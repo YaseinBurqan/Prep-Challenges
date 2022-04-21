@@ -9,15 +9,19 @@
 //  
 // Input: [12, 32, 22, 45, 78, 12, 50]
 // Output: 78
-//  
 
-const findMax = (arr)=>{
-    let max;
-    // write your code here
-    return max;
-}
+const findMax = (arr) => {
+  let max = 0;
+  // write your code here
+  for (let i = 0; i < arr.length; i++) {
+    let element = arr[i];
+    if (element > max) {
+      max = element;
+    }
+  }
+  return max;
+};
 // -------------------------------------------------------------------------------------------------------
-
 // -------------------------------------------------------------------------------------------------------
 //  Challenge 02:
 //  Required:
@@ -29,11 +33,18 @@ const findMax = (arr)=>{
 // Output: 81
 //  
 
-const sumNums = (arr)=>{
-    let sum;
-    // write your code here
-    return sum;
-}
+
+const sumNums = (arr) => {
+  let sum = 0;
+  // write your code here
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] == "number") {
+      sum += arr[i];
+    }
+  }
+
+  return sum;
+};
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
