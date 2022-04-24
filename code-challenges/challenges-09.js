@@ -21,9 +21,8 @@
 const arrInc = (arr) => {
   let result = [];
   // write your code here
-
   for (var i = 0; i < arr.length; ++i) {
-    result.push(arr[i] + 10); // i-th element
+    result.push(arr[i] + 10);
   }
   return result;
 };
