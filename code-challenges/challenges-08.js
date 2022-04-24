@@ -28,10 +28,11 @@
 
 const customerAndAge = (obj) => {
   // write your code here
-  for (let index = 0; index < obj.length; index++) {
-    const element = array[index];
-    console.log(index);
+  let arr = [];
+  for (let str in obj) {
+    arr.push(`Customer Name :${str} , Age :${obj[str]}`);
   }
+  return arr;
 };
 // -------------------------------------------------------------------------------------------------------
 
