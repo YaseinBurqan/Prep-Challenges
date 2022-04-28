@@ -197,6 +197,7 @@ function gradesAvg(arr) {
 //      avg: 11.75,
 //      result: 'Failed'
 // 	}
+
 // ]
 
 function studentsResult(arr) {
