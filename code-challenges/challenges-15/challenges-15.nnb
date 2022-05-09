@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function equalizeArray(arr) {\n  // Write your code here\n  const cache = [];\n\n  for (let i of arr) {\n    if (cache[i]) {\n      cache[i]++;\n    } else {\n      cache[i] = i;\n    }\n  }\n  let acc = Object.values(cache);\n  let max = Math.max(...acc);\n\n  return arr.length - max;\n}\n"
             ],
             "outputs": []
         },
