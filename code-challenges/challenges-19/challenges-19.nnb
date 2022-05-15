@@ -1,0 +1,67 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "## Hacker Rank\r\n\r\nFor Thursdays you will be solving some selected challenges on HackerRank, please create an account if you don't have then\r\nFollow the links below:\r\nread them carefully and solve them then copy-paste your solution below in Code Block"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Required**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Append And Delete](https://www.hackerrank.com/challenges/append-and-delete/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function appendAndDelete(s, t, k) {\r\nlet a = s,\r\nmoves = 0,\r\nempty = false;\r\n\r\nfor (let i = 0; i < Math.max(s.length, t.length); i++) {\r\nif (a[i] == t[i]) continue;\r\nelse if (!a[i] && !!t[i]) {\r\na += t[i];\r\nmoves++;\r\n} else {\r\nif (i == 0) empty = true;\r\na = s.substr(0, i);\r\nmoves += s.length - i--;\r\n}\r\n}\r\nif (s.length + t.length <= k || moves <= k && ((k - moves) % 2 == 0 || empty == true)) return \"Yes\";\r\nelse return \"No\";\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Optional**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Encryption](https://www.hackerrank.com/challenges/encryption/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [The Time In Words](https://www.hackerrank.com/challenges/the-time-in-words/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        }
+    ]
+}
